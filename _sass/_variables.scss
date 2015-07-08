@@ -1,0 +1,39 @@
+$font-size-base: 14px;
+$font-size-large: 28px;
+
+
+$theme-darker: #2B3A42;
+$theme-dark: #3F5765;
+$theme-light: #BDD4DE;
+$theme-lighter: #EFEFEF;
+$theme-accent: #FF530D;
+$theme-lightest: #FFFFFF;
+
+
+$brand-primary:         darken($theme-light, 6.5%) !default; // #337ab7
+$brand-success:         $theme-dark !default;
+$brand-info:            $theme-darker !default;
+$brand-warning:         $theme-lighter !default;
+$brand-danger:          $theme-accent !default;
+
+
+$navbar-default-bg: $theme-darker;
+$navbar-default-color: $theme-lighter;
+$navbar-default-brand-color: $theme-lighter;
+$navbar-default-link-active-color: $theme-accent;
+$navbar-default-link-hover-color: $theme-lightest;
+
+$body-bg:                $theme-lighter !default;
+//** Global text color on `<body>`.
+$text-color:            $theme-darker !default;
+
+//** Global textual link color.
+$link-color:            $brand-primary !default;
+//** Link hover color set via `darken()` function.
+$link-hover-color:      darken($link-color, 15%) !default;
+//** Link hover decoration.
+$link-hover-decoration: underline !default;
+
+
+
+@import "bootstrap/variables";
