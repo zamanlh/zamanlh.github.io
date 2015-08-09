@@ -1,22 +1,48 @@
-<header class="site-header">
-
-<nav class="navbar navbar-default navbar-fixed-top">
-  <div class="container">
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">Kerr Lab</a>
     </div>
-    <div id="navbar" class="nav navbar-nav navbar-right">
+    <div id="navbar" class="nav navbar-nav navbar-right navbar-static-top">
       <ul class="nav navbar-nav">
-        <li class="active"><a href="#">Home</a></li>
-        <li><a href="#about">People</a></li>
-        <li><a href="#contact">Projects</a></li>
-        <li><a href="#">Papers</a></li>
-        <li><a href="#">Blog</a></li>
-        <li><a href="#">Contact</a></li>
+        {% if page.active == "home" %}
+          <li class="active"><a href="#">Home</a></li>
+        {% else %}
+          <li><a href="/">Home</a></li>
+        {% endif %}
+
+        {% if page.active == "people" %}
+          <li class="active"><a href="#">People</a></li>
+        {% else %}
+          <li><a href="/people.html">People</a></li>
+        {% endif %}
+
+        {% if page.active == "projects" %}
+          <li class="active"><a href="#">Projects</a></li>
+        {% else %}
+          <li><a href="/projects.html">Projects</a></li>
+        {% endif %}
+
+        {% if page.active == "papers" %}
+          <li class="active"><a href="#">Papers</a></li>
+        {% else %}
+          <li><a href="/papers.html">Papers</a></li>
+        {% endif %}
+
+        {% if page.active == "blog" %}
+          <li class="active"><a href="#">Blog</a></li>
+        {% else %}
+          <li><a href="/blog.html">Blog</a></li>
+        {% endif %}
+
+        {% if page.active == "contact" %}
+          <li class="active"><a href="#">Contact</a></li>
+        {% else %}
+          <li><a href="/contact.html">Contact</a></li>
+        {% endif %}
+
       </ul>
 
     </div><!--/.nav-collapse -->
   </div>
 </nav>
-
-</header>
