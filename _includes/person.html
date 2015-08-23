@@ -1,10 +1,25 @@
+<script>
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
+</script>
 <div class="col-sm-6 col-md-4">
 	<div class="well">
 		<img src="{{site.baseurl}}{{person.image}}" class="img-circle" height=200>
 		</br>
-		{{ person.role }}
+		<h3>{{person.name}}</h3>
+		<h4 class="text-danger">{{ person.role }}</h4>
 		</br>
 		
-		<i class="fa fa-twitter"> <a> {{person.twitter}} </a></i> 
+		<ul class="list-group text-left">
+		{% if person.twitter %}
+			<li class="list-group-item"> <i class="fa fa-twitter"> <a href="https://twitter.com/{{person.twitter}}" target="_blank"> {{person.twitter}} </a></i> </li>
+		{% endif %}
+
+		{% if person.email %}
+			<li class="list-group-item"> <i class="fa fa-envelope"> <a href="mailto:{{person.email}}" target="_blank"> {{person.email}} </a></i> </li>
+		{% endif %}
+		</ul>
+
 	</div>
 </div>
