@@ -4,9 +4,32 @@ active: people
 ---
 <div class="container-fluid text-center">
 	<div class="row">
+	
 	{% for person in site.people %}
-		{% include person.html %}
+		{% if person.role == "PI" %}
+			{% include person.html %}
+		{% endif %}
 	{% endfor %}
+
+	{% for person in site.people %}
+		{% if person.role == "Postdoc" %}
+			{% include person.html %}
+		{% endif %}
+	{% endfor %}
+
+
+	{% for person in site.people %}
+		{% if person.role == "PhD Student" %}
+			{% include person.html %}
+		{% endif %}
+	{% endfor %}
+
+	{% for person in site.people %}
+		{% if person.role == "Undergrad Student" %}
+			{% include person.html %}
+		{% endif %}
+	{% endfor %}
+
 	</div>
 </div>
 
