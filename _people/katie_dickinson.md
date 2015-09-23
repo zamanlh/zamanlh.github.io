@@ -1,6 +1,6 @@
 ---
 name: Katie Dickinson
-role: Research Scientist and Lab Manager Extraodinaire
+role: Research Scientist
 current: true
 website: "todo"
 email: "katiejd8@uw.edu"

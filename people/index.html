@@ -12,6 +12,13 @@ active: people
 	{% endfor %}
 
 	{% for person in site.people %}
+		{% if person.role == "Research Scientist" %}
+			{% include person.html %}
+		{% endif %}
+	{% endfor %}
+
+
+	{% for person in site.people %}
 		{% if person.role == "Postdoc" %}
 			{% include person.html %}
 		{% endif %}
@@ -19,13 +26,13 @@ active: people
 
 
 	{% for person in site.people %}
-		{% if person.role == "PhD Student" %}
+		{% if person.role == "Grad" %}
 			{% include person.html %}
 		{% endif %}
 	{% endfor %}
 
 	{% for person in site.people %}
-		{% if person.role == "Undergrad Student" %}
+		{% if person.role == "Undergrad" %}
 			{% include person.html %}
 		{% endif %}
 	{% endfor %}
