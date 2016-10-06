@@ -6,7 +6,7 @@ $theme-darker: #2B3A42;
 $theme-dark: #3F5765;
 $theme-light: #BDD4DE;
 $theme-lighter: #EFEFEF;
-$theme-accent: #FF530D;
+$theme-accent: #E60000;
 $theme-lightest: #FFFFFF;
 
 
@@ -17,11 +17,20 @@ $brand-warning:         $theme-lighter !default;
 $brand-danger:          $theme-accent !default;
 
 
-$navbar-default-bg: $theme-darker;
+$navbar-default-bg: rgba($theme-dark, 0.6) !default;
 $navbar-default-color: $theme-lighter;
 $navbar-default-brand-color: $theme-lighter;
+$navbar-default-link-color: $theme-light !default;
 $navbar-default-link-active-color: $theme-accent;
 $navbar-default-link-hover-color: $theme-lightest;
+
+
+$navbar-default-border:            darken($navbar-default-bg, 6.5%) !default;
+$navbar-default-link-active-bg:            darken($navbar-default-bg, 5.5%) !default;
+$navbar-default-brand-hover-color:         darken($navbar-default-brand-color, 15%) !default;
+
+
+
 
 $body-bg:                $theme-lighter !default;
 //** Global text color on `<body>`.
