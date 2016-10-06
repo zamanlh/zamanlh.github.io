@@ -1,14 +1,13 @@
-<nav class="navbar navbar-default navbar-static-top">
+<nav class="navbar navbar-default">
   <div class="container-fluid">
     <div class="navbar-header">
       <a class="navbar-brand" href="#">Luis Zaman</a>
     </div>
-    <div id="navbar" class="nav navbar-nav navbar-right navbar-static-top">
-      <ul class="nav navbar-nav">
-        {% if page.active == "home" %}
-          <li class="active"><a href="#">Home</a></li>
+    <ul class="nav navbar-nav navbar-right">
+        {% if page.active == "about" %}
+          <li class="active"><a href="#">About</a></li>
         {% else %}
-          <li><a href="/home.html">Home</a></li>
+          <li><a href="/about.html">About</a></li>
         {% endif %}
 
         {% if page.active == "projects" %}
@@ -17,13 +16,13 @@
           <li><a href="/projects">Projects</a></li>
         {% endif %}
 
-        {% if page.active == "papers" %}
-          <li class="active"><a href="#">Papers</a></li>
+        {% if page.active == "publications" %}
+          <li class="active"><a href="#">Publications</a></li>
         {% else %}
-          <li><a href="/papers">Papers</a></li>
+          <li><a href="/papers">Publications</a></li>
         {% endif %}
 
-        {% if page.active == "blog" %}
+        {% if page.active == "Blog" %}
           <li class="active"><a href="#">Blog</a></li>
         {% else %}
           <li><a href="/blog">Blog</a></li>
@@ -35,8 +34,6 @@
           <li><a href="/contact">Contact</a></li>
         {% endif %}
 
-      </ul>
-
-    </div><!--/.nav-collapse -->
+    </ul>
   </div>
 </nav>
