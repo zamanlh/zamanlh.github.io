@@ -1,0 +1,30 @@
+---
+layout: default
+active: projects
+---
+</br>
+
+<div class="container-fluid">
+	<div class="container-fluid text-center">
+		<div class="row">
+		{% assign loopindex = 0 %}
+		
+		{% assign proj = site.project %}
+		
+		{% for proj in site.project %}
+			{% assign rowfinder = loopindex | modulo: 2 %}
+			{% if rowfinder == 0 %}
+				<div class="row">
+			{% endif %}
+
+			{% include project.html %}
+
+			{% if rowfinder == 3 %}
+				</div>
+			{% endif %}
+
+			{% assign loopindex = loopindex | plus: 1 %}
+
+		{% endfor %}
+	</div>
+</div>
