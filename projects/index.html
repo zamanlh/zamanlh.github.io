@@ -6,7 +6,6 @@ active: projects
 
 <div class="container-fluid">
 	<div class="container-fluid text-center">
-		<div class="row">
 		{% assign loopindex = 0 %}
 		
 		{% assign proj = site.project %}
@@ -19,12 +18,11 @@ active: projects
 
 			{% include project.html %}
 
-			{% if rowfinder == 3 %}
+			{% if rowfinder == 1 %}
 				</div>
 			{% endif %}
 
 			{% assign loopindex = loopindex | plus: 1 %}
 
 		{% endfor %}
-	</div>
 </div>
