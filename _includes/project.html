@@ -1,0 +1,13 @@
+  <div class="item project_summary">
+  	{%- if proj.has_video -%}
+  		<div class="project_image">
+  			<video autoplay loop muted> 
+  				<source src={{proj.image}} type="video/webm" />
+  			</video>
+  		</div>
+  	{%- else -%}
+  	  	<div class="project_image"><img src={{proj.image}}/></div>
+  	{%- endif -%}
+    <div class="project_title">{{proj.title}}</div>
+    <div class="project_description">{{proj.blurb}}</div>
+  </div>
