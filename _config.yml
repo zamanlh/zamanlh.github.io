@@ -63,3 +63,4 @@ remote_theme: chrisbobbe/jekyll-theme-prologue
 collections:
   - sections
   - projects
+  - people

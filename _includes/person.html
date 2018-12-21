@@ -1,0 +1,40 @@
+
+<div class="item people_summary">
+  <div class="people_image">
+    {% if person.website %}
+    <a href="{{person.website}}">
+    {% endif %}     
+      <img src="{{site.baseurl}}{{person.image}}">
+    {% if person.website %}
+    </a>
+    {% endif %}
+  </div>
+
+  <div class="people_title">
+    <h3>{{person.name}}</h3>
+  </div>
+  
+  <div class="people_blurb">
+    <p>{{person.short_blurb}}</p>
+  </div>
+  
+  <div class="people_contacts">
+    <ul>
+    {% if person.twitter %}
+      <li> <i class="fa fa-twitter"> <a href="https://twitter.com/{{person.twitter}}" target="_blank"> {{person.twitter}} </a></i> </li>
+    {% endif %}
+
+    {% if person.email %}
+      <li> <i class="fa fa-envelope"> <a href="mailto:{{person.email}}" target="_blank"> {{person.email}} </a></i> </li>
+    {% endif %}
+      
+    {% if person.github %}
+      <li> <i class="fa fa-github"> <a href="https://github.com/{{person.github}}" target="_blank"> {{person.github}} </a></i> </li>
+    {% endif %}
+      
+    {% if person.scholar %}
+      <li> <i class="fa fa-graduation-cap""> <a href="https://scholar.google.com/citations?user={{person.scholar}}" target="_blank">Google Scholar</a></i> </li>
+      {% endif %}   
+    </ul>
+  </div>
+</div>
