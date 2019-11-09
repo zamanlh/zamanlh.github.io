@@ -247,29 +247,45 @@
 		padding: 5px;
 		grid-gap: 5px;
 
-		grid-template-areas:
+		grid-template-areas:	
 		"name name name name"
 		"pic blurb blurb blurb"
-		"pic con con con";
+		"pic blurb blurb blurb"
+		"con con con con";
 
 		.people_image {
 			grid-area: pic;
-			object-fit: cover;
-
+			padding: 10px;
+			width: 300px;
 		}
 		.people_title {
+			padding: 10px;
+			text-align: left;
 			grid-area: name;
+			color: #B76D68;
+			font-size: 1.5em;
 
 		}
 		.people_blurb {
 			text-align: left;
 			grid-area: blurb;
 			font-size: 0.8em;
+			padding: 10px;
 
 		}
 		.people_contact {
-			grid-area: con;
+			grid-area: con;	
 		}
+	}
+
+	.people_contact ul li {
+	  list-style: none;
+	  list-style-type: none;
+	  padding: 0px;
+	  margin: 20px;
+	  overflow: hidden;
+	  float: left;
+	  display: inline;
 	}
 
 	.project_summary {
@@ -318,6 +334,10 @@
 		img {
 			display: block;
 			width: 100%;
+		}
+
+		&.round {
+			border-radius: 10%;
 		}
 
 		&.avatar48 {

@@ -4,21 +4,31 @@
     {% if person.website %}
     <a href="{{person.website}}">
     {% endif %}     
-      <img src="{{site.baseurl}}{{person.image}}">
+      <img class="image round" src="{{site.baseurl}}{{person.image}}" >
     {% if person.website %}
     </a>
     {% endif %}
   </div>
 
   <div class="people_title">
-    <h3>{{person.name}}</h3>
+    {% if person.website %}
+    <a href="{{person.website}}">
+    {% endif %}     
+
+      {{person.name}}
+    
+    {% if person.website %}
+    </a>
+    {% endif %}
+
   </div>
   
   <div class="people_blurb">
+    <h4>{{person.role}}</h4>
     <p>{{person.short_blurb}}</p>
   </div>
   
-  <div class="people_contacts">
+  <div class="people_contact" id="people_contact">
     <ul>
     {% if person.twitter %}
       <li> <i class="fa fa-twitter"> <a href="https://twitter.com/{{person.twitter}}" target="_blank"> {{person.twitter}} </a></i> </li>
