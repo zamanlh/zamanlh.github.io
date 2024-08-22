@@ -30,8 +30,8 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Zaman E³ Lab
-subtitle: Engineered and Experimental Evolution
+title: The ZE³ Lab
+subtitle: At The University of Michigan
 description: >- # this means to ignore newlines until "baseurl:"
   The homepage of Dr. Luis Zaman's research group
   at the University of Michigan jointly between the 
@@ -39,7 +39,7 @@ description: >- # this means to ignore newlines until "baseurl:"
   Evolutionary Biology departments.
 author: Luis Zaman
 email: zamanlh@umich.edu
-avatar: assets/images/logo.png
+logo: assets/images/logo.png
 
 # You'll want to customize url and baseurl for your own site:
 baseurl: "" # the subpath of your site, e.g. /blog
