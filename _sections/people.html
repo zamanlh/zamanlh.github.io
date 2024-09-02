@@ -8,11 +8,11 @@ order: 3
 <h3> Current Members </h3>
 	{% assign current_people = site.people | sort: "sort_order" | where: "current", true %}
 	{% for person in current_people %}
-        {% include person.html %}
+        {% include current_member.html %}
  	{% endfor %}  
 
 <h3> Past Members </h3>
-	{% assign current_people = site.people | sort: "sort_order" | where: "current", false %}
-	{% for person in current_people %}
-        {% include person.html %}
+	{% assign past_people = site.people | sort: "sort_order" | where: "current", false %}
+	{% for person in past_people %}
+        {% include past_member.html %}
  	{% endfor %}  
