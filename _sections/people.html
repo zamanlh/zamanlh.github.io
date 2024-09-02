@@ -12,7 +12,9 @@ order: 3
  	{% endfor %}  
 
 <h3> Past Members </h3>
+<div class="gallery">
 	{% assign past_people = site.people | sort: "sort_order" | where: "current", false %}
 	{% for person in past_people %}
         {% include past_member.html %}
  	{% endfor %}  
+</div>

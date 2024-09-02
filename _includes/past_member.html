@@ -1,13 +1,15 @@
 
 <div class="item people_summary">
-  <div class="people_image">
+  <div class="people_blurb">
     {% if person.website %}
     <a href="{{person.website}}">
     {% endif %}     
-      <img class="image round" src="{{site.baseurl}}{{person.image}}" >
+      <img class="people_image image round" src="{{site.baseurl}}{{person.image}}" >
     {% if person.website %}
     </a>
     {% endif %}
+    <h4>{{person.role}}</h4>
+    <p>{{person.short_blurb}}</p>
   </div>
 
   <div class="people_title">
@@ -22,12 +24,7 @@
     {% endif %}
 
   </div>
-  
-  <div class="people_blurb">
-    <h4>{{person.role}}</h4>
-    <p>{{person.short_blurb}}</p>
-  </div>
-  
+    
   <div class="people_contact" id="people_contact">
     <ul>
     {% if person.twitter %}

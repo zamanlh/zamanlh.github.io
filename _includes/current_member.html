@@ -1,14 +1,5 @@
 
 <div class="item people_summary">
-  <div class="people_image">
-    {% if person.website %}
-    <a href="{{person.website}}">
-    {% endif %}     
-      <img class="image round" src="{{site.baseurl}}{{person.image}}" >
-    {% if person.website %}
-    </a>
-    {% endif %}
-  </div>
 
   <div class="people_title">
     {% if person.website %}
@@ -22,8 +13,16 @@
     {% endif %}
 
   </div>
-  
+
   <div class="people_blurb">
+    {% if person.website %}
+    <a href="{{person.website}}">
+    {% endif %}     
+      <img class="people_image image round" src="{{site.baseurl}}{{person.image}}" >
+    {% if person.website %}
+    </a>
+    {% endif %}
+  
     <h4>{{person.role}}</h4>
     <p>{{person.short_blurb}}</p>
   </div>
