@@ -11,7 +11,11 @@
     {% if person.website %}
     </a>
     {% endif %}
-
+  </div>
+  <div class="people_pronouns">
+    {% if person.pronouns %}
+      ( {{person.pronouns}} )
+    {% endif %}
   </div>
 
   <div class="people_blurb">

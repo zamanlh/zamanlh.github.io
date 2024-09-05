@@ -264,7 +264,13 @@
 			grid-area: name;
 			color: #B76D68;
 			font-size: 1.5em;
-
+		}
+		.people_pronouns {
+			padding: 10px;
+			text-align: right;
+			grid-area: name;
+			color: #5E9986;
+			font-size: 1.0em;
 		}
 		.people_blurb {
 			text-align: left;
