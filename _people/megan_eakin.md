@@ -1,5 +1,6 @@
 ---
 name: Megan Eakin
+pronouns: she/her
 role: Lab Manager
 current: True
 image: "assets/images/people/megan_eakin.jpeg"
