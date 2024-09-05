@@ -1,6 +1,6 @@
 ---
 name: Siliang Song
-pronounds: he/him
+pronouns: he/him
 role: Graduate Student
 current: true
 image: "assets/images/people/siliang_song.jpg"
