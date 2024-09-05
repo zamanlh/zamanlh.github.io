@@ -248,7 +248,7 @@
 		grid-gap: 5px;
 
 		grid-template-areas:	
-		"name name name name"
+		"name name name pronouns"
 		"blurb blurb blurb blurb"
 		"blurb blurb blurb blurb"
 		"con con con con";
@@ -268,7 +268,7 @@
 		.people_pronouns {
 			padding: 10px;
 			text-align: right;
-			grid-area: name;
+			grid-area: pronouns;
 			color: #5E9986;
 			font-size: 1.0em;
 		}
